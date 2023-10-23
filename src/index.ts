@@ -5,7 +5,9 @@ const PORT: number = 3000;
 
 
 app.get('/',(req:Express.Request,res:Express.Response)=>{
-    res.send("Hola Mundo")
-})
+    res.send("<p>Hello world!</p>")
+});
 
-app.listen(PORT, () => {console.log(`App is listening at port ${PORT}`)})
+app.listen(PORT, () => {
+    console.log(`App is listening at port ${PORT}`)
+});
